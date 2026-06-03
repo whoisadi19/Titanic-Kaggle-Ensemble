@@ -4,12 +4,22 @@ This repository contains the complete pipeline and methodology that achieved a p
 
 ---
 
-## 🚀 Key Insights & Methodology
+### Tech Stack
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-%232C2C2C.svg?style=for-the-badge&logo=xgboost&logoColor=white)
+
+---
+
+## Key Insights & Methodology
 
 To break through the standard machine learning performance ceiling on this historic dataset, our approach combines a robust, regularized ensembling system with targeted passenger group heuristics.
 
 ### 1. Handcrafted Feature Engineering
-*   **Sex × Pclass Interaction:** The single most powerful signal on the Titanic, splitting passengers into 6 distinct subgroups.
+*   **Sex x Pclass Interaction:** The single most powerful signal on the Titanic, splitting passengers into 6 distinct subgroups.
 *   **LogFarePerPerson:** Ticket fares in the raw dataset represent group fares. We calculated individual fares by dividing `Fare` by the ticket's group size and applied a log transform to handle the skew.
 *   **Title & Deck Extraction:** Normalized titles (`Mr`, `Mrs`, `Miss`, `Master`, `Royalty`, `Officer`) to capture social hierarchy and parsed passenger `Deck` positions from the `Cabin` column.
 *   **Group Survival (LOO):** Extracted family-group survival rates using Leave-One-Out (LOO) target encoding on the training set to prevent leakage.
@@ -32,7 +42,7 @@ We applied targeted **WCG (Woman-Child-Group) overrides**:
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 *   `src/features_v2.py`: Feature engineering pipeline.
 *   `src/train_v14_legit.py`: Legitimate machine learning training pipeline + optimized WC->0 corrections.
