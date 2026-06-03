@@ -1,6 +1,6 @@
-# Titanic: Machine Learning from Disaster - Kaggle Top 1.5% Ensemble
+# Titanic: Machine Learning from Disaster - Kaggle Top 2% Ensemble
 
-This repository contains the complete pipeline and methodology that achieved a public score of **0.95215** (exactly **398/418** correct predictions), ranking in the **Top 1.5% (Rank 248)** of the Kaggle Titanic competition.
+This repository contains the complete pipeline and methodology that achieved a public score of **0.95215** (exactly **398/418** correct predictions), ranking in the **Top 2% (Rank 248)** of the Kaggle Titanic competition.
 
 ---
 
